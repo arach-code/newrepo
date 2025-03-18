@@ -1,6 +1,127 @@
-/******* Change Box Model ***************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+/* Base Styles (Mobile First) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.image-slider img {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0;
+}
+
+.cta .btn {
+  background-color: #28a745;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.hero {
+  background-image: url('/public/images/site/checkerboard.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white; 
+}
+
+.hero-overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive Design - Larger Screens */
+@media (min-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  .main-content {
+    padding: 40px;
+  }
+
+  .cta .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .image-slider img {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 60px;
+  }
+
+  .image-slider img {
+    max-width: 1000px;
+  }
+
+  .cta .btn {
+    font-size: 22px;
+  }
 }
