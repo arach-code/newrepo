@@ -1,0 +1,90 @@
+
+/* Container for Upgrades and Reviews */
+.upgrades-reviews-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both columns are equal in height */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Upgrades & Reviews as two equal columns */
+.upgrades, .reviews {
+  flex: 1; /* Both take equal width */
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center upgrade items inside the upgrades column */
+.upgrade-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.upgrade {
+  width: 45%; /* Ensures two upgrades per row */
+  margin: 10px;
+  text-align: center;
+}
+
+/* Adjust Review List */
+.reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reviews li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .upgrades-reviews-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .upgrade {
+      width: 100%; /* Stack upgrades in one column on small screens */
+  }
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+  .features {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .hero img {
+      width: 50%;
+  }
+
+  .car-info {
+      padding: 2rem;
+      margin-top: 0;
+  }
+}

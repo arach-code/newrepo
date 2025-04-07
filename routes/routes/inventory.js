@@ -1,0 +1,1 @@
+router.get("/detail/:invId", invController.buildByInventoryId);
